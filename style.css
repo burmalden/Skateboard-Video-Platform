@@ -19,6 +19,10 @@ html {
   --clr-5: #34373c;
   --clr-6: #ccc;
   --clr-7: #6c5ecf;
+  --clr-8: rgba(37, 40, 49, 0.5);
+  --clr-9: #242730;
+  --clr-10: #B7B9D2;
+  --clr-11: #808191;
 }
 
 body {
@@ -156,10 +160,10 @@ input:checked + .slider:before {
 }
 
 .header {
-  padding: 1.5em;
+  margin: 1.5em;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 40px;
 }
 
 .header__searchBar {
@@ -202,4 +206,147 @@ input:checked + .slider:before {
   height: 25px;
   width: 25px;
   margin-right: 20px;
+}
+
+.content {
+  grid-column-start: 2;
+  margin: 1.5em;
+}
+
+.content__header {
+  color: var(--clr-1);
+}
+
+.content__major {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.content__image {
+  border-radius: 20px;
+  height: 350px;
+  width: 750px;
+  margin-inline: auto;
+}
+
+.content__text_left {
+  color: var(--clr-1);
+  width: 160px;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.content__avatar {
+  float: left;
+  margin-top: 40px;
+}
+
+.content__name {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.content__disc {
+  opacity: 0.6;
+}
+
+.content__time {
+  background-color:  var(--clr-8);
+  border-radius: 8px;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  right: -540px;
+  bottom: -80px;
+}
+
+.content__text_right {
+  color: var(--clr-1);
+  width: 160px;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.content__image_right {
+  width: 400px;
+}
+
+.content__name_right {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content__imgRight{
+  position: relative;
+}
+
+.content__time_right {
+  bottom: -65px;
+  right: -200px;
+}
+
+.content__additionalPlace {
+  color: var(--clr-1);
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.content__cards {
+  background-color: var(--clr-9);
+  height: 300px;
+  width: 250px;
+  margin-inline: auto;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.content__cards_1 {
+  grid-column-start: 1;
+}
+
+.card__img {
+  width: 250px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card__time {
+  top: 10px;
+  right: 10px;
+}
+
+.card__avatar {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+}
+
+.card__text {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.card__name {
+  color: var(--clr-10);
+}
+
+.card__info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card__disc {
+  color: var(--clr-11);
 }
